@@ -1,0 +1,319 @@
+header {
+    background: url(../assets/images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 18px;
+    height: 100vh;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.arrow {
+    margin: 50px;
+    position: relative;
+}
+
+.arrow div {
+    background-image: url(../assets/images/icon-arrow-down.svg);
+    height: 115px;
+    width: 34px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: arrowDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrowDown {
+    0% {
+        top: 0px
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        background: url(../assets/images/mobile/image-header.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header h1 {
+        font-size: 2.25rem;
+    }
+}
+
+/* CONTENT  */
+
+
+main div {
+    height: 350px;
+}
+main  .egg {
+    background-image: url(../assets/images/desktop/image-transform.jpg);
+    background-position: center;
+    background-size: cover;   
+}
+
+main div .content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+main .content h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+main .content p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-grayish-blue);
+}
+
+main .content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+
+main .rose {
+    background-image: url(../assets/images/desktop/image-stand-out.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+main .cherry {
+    background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 500px;
+    display: flex;
+}
+
+main .tangerine {
+    background-image: url(../assets/images/desktop/image-photography.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 500px;
+    display: flex; 
+}
+
+main .image-content {
+  width: 420px;
+  flex-direction: column;
+  text-align: center;
+  align-self: flex-end;
+}
+
+main div .image-content h3 {
+    padding-top: 200px;
+}
+
+
+@media (max-width: 580px) {
+
+    main div .egg {
+        background-image: url(../assets/images/mobile/image-transform.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .egg {
+        order: -1;
+    }
+
+
+    main div .content {
+        text-align: center;
+        
+    }
+
+    main .content h3 {
+        font-size: 1.825rem;
+    }
+
+    main div .rose {
+        background-image: url(../assets/images/mobile/image-stand-out.jpg);
+        background-size: contain;
+        background-position: center;
+    }
+
+    
+    main .cherry {
+        background-image: url(../assets/images/mobile/image-graphic-design.jpg);
+        background-size: cover; 
+        background-position: unset;
+    }
+    
+    main .tangerine {
+        background-image: url(../assets/images/mobile/image-photography.jpg);
+        background-size: cover; 
+        background-position: unset;
+    }
+}
+
+
+
+/* CLIENT TESTIMONIALS */
+
+.testimonials {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.testimonials h1 {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.testimonials  .img-round {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border: 1px solid none;
+    border-radius: 50%;
+}
+
+.testimonials .card {
+    align-items: center;
+    border-color: none;
+}
+
+.testimonials .client-1 {
+    background-image: url(../assets/images/image-emily.jpg);
+    
+}
+
+.testimonials .client-2 {
+    background-image: url(../assets/images/image-thomas.jpg);
+    
+}
+
+.testimonials .client-3 {
+    background-image: url(../assets/images/image-jennie.jpg);
+    
+}
+
+.testimonials p {
+    color: var(--very-dark-grayish-blue);
+    font-family: 'Barlow', serif;
+}
+
+.testimonials h5 {
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.testimonials h6 {
+    font-family: 'Barlow', serif;
+    color: var(--grayish-blue);
+}
+
+/* Section images Project */
+
+.images-projects div {
+    height: 400px;
+}
+
+.images-projects .milk {
+    background-image: url(../assets/images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+}
+
+.images-projects .orange {
+    background-image: url(../assets/images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+}
+
+.images-projects .cone {
+    background-image: url(../assets/images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+}
+
+.images-projects .sugar {
+    background-image: url(../assets/images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 580px) {
+
+    .images-projects .milk {
+        background-image: url(../assets/images/mobile/image-gallery-milkbottles.jpg);
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .images-projects .orange {
+        background-image: url(../assets/images/mobile/image-gallery-orange.jpg);
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .images-projects .cone {
+        background-image: url(../assets/images/mobile/image-gallery-cone.jpg);
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .images-projects .sugar {
+        background-image: url(../assets/images/mobile/image-gallery-sugar-cubes.jpg);
+        background-size: cover;
+        width: 50%;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--footer);
+    height: 350px;
+    color: var(--dark-desaturated-cyan);
+}
+
+footer div h3 {
+    text-transform: lowercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.825rem;
+}
+
+footer div nav a {
+    text-decoration: none;
+    color: var(--dark-desaturated-cyan);
+}
+
+.attribution {
+    margin: 0;
+}
+.attribution a {
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+header nav {
+    background-color: #3dbeff;
+}
+
+header .navbar-collapse {
+    width: auto;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../assets/images/icon-hamburger.svg)
+}
+
+header nav .nav-link{
+    color: #fff;
+}
+
+header nav div button span .navbar-toggler-icon{
+    background-color: #fff;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* testimonials */
+
+
+.testimonials .card {
+    border: none;
+}
+
